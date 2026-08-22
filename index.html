@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlowFund — Smart Daily Spending Pacing</title>
+  <style>
+    :root {
+      --bg: #0F172A;
+      --card: #1E293B;
+      --primary: #38BDF8;
+      --accent: #22C55E;
+      --text: #F8FAFC;
+      --muted: #94A3B8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 24px;
+      text-align: center;
+    }
+    .badge {
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--primary);
+      padding: 6px 16px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+    h1 {
+      font-size: 42px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #38BDF8, #818CF8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.lead {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 500px;
+      margin-bottom: 32px;
+      line-height: 1.5;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      max-width: 700px;
+      width: 100%;
+      margin-bottom: 36px;
+      text-align: left;
+    }
+    .card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 16px;
+      border: 1px solid rgba(148, 163, 184, 0.15);
+    }
+    .card h3 {
+      font-size: 16px;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+    .card p {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+    .links {
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .links a {
+      color: var(--primary);
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .links a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="badge">✨ REINVENTING PERSONAL FINANCE</div>
+  <h1>FlowFund</h1>
+  <p class="lead">Know exactly what is safe to spend today. Real-time dynamic rollover and runway pacing for salaried and freelance life.</p>
+  
+  <div class="card-grid">
+    <div class="card">
+      <h3>🎯 Safe Daily Allowance</h3>
+      <p>Automatically calculates your daily limit and dynamically adjusts when life happens.</p>
+    </div>
+    <div class="card">
+      <h3>🛡️ Bill Ring-Fencing</h3>
+      <p>Sets aside cash for upcoming bills daily so you're never caught off guard on due dates.</p>
+    </div>
+    <div class="card">
+      <h3>🎨 Flexible Income Mode</h3>
+      <p>Built for freelancers and students. Paces spending on a rolling 30-day runway.</p>
+    </div>
+  </div>
+
+  <div class="links">
+    <a href="./app-ads.txt">app-ads.txt</a> &bull;
+    <a href="#">Privacy Policy</a> &bull;
+    <a href="#">Support</a>
+  </div>
+</body>
+</html>
